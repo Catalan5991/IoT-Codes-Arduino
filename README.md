@@ -14,18 +14,18 @@ Códigos de Arduino de las practicas de laboratorio de IoT
 
 ### Conexiones:
 1. Identifica las patas del LED individual:
-    - Ánodo (positivo): La pata más larga del LED, que conectaremos al pin de Arduino a través de una resistencia.
-    - Cátodo (negativo): La pata más corta del LED, que conectaremos al GND.
+    - Ánodo (positivo): La pata más larga del LED, que conectaremos al pin.
+    - Cátodo (negativo): La pata más corta del LED, una resistencia de 220Ω que conectaremos al GND.
 2. Conexiones para cada LED:
     - LED Rojo:
-        - Conecta el ánodo del LED a una resistencia de 220Ω y luego al pin digital PWM 9 de Arduino.
-        - Conecta el cátodo directamente al GND de Arduino.
+        - Conecta el ánodo del LED al pin digital PWM 11 de Arduino.
+        - Conecta el cátodo conectado a una resistencia de 220Ω  y al GND de Arduino.
     - LED Verde:
-        - Conecta el ánodo del LED a una resistencia de 220Ω y luego al pin PWM 10 de Arduino.
-        - Conecta el cátodo al GND.
+        - Conecta el ánodo del LED al pin digital PWM 12 de Arduino.
+        - Conecta el cátodo conectado a una resistencia de 220Ω  y al GND de Arduino.
     - LED Azul:
-        - Conecta el ánodo del LED a una resistencia de 220Ω y luego al pin PWM 11 de Arduino.
-        - Conecta el cátodo al GND.
+        - Conecta el ánodo del LED al pin digital PWM 13 de Arduino.
+        - Conecta el cátodo conectado a una resistencia de 220Ω  y al GND de Arduino.
 
 ## SEMAFORO
 ### Practica: 
@@ -40,18 +40,18 @@ Este archivo contiene el código para simular el funcionamiento de un semáforo.
 
 ### Conexiones:
 1. Identifica las patas del LED individual:
-    - Ánodo (positivo): La pata más larga del LED, que conectaremos al pin de Arduino a través de una resistencia.
-    - Cátodo (negativo): La pata más corta del LED, que conectaremos al GND.
+    - Ánodo (positivo): La pata más larga del LED, que conectaremos al pin.
+    - Cátodo (negativo): La pata más corta del LED, una resistencia de 220Ω que conectaremos al GND.
 2. Conexiones para cada LED:
     - LED Rojo:
-        - Conecta el ánodo del LED a una resistencia de 220Ω y luego al pin digital PWM 9 de Arduino.
-        - Conecta el cátodo directamente al GND de Arduino.
+        - Conecta el ánodo del LED al pin digital PWM 11 de Arduino.
+        - Conecta el cátodo conectado a una resistencia de 220Ω  y al GND de Arduino.
     - LED amarillo:
-        - Conecta el ánodo del LED a una resistencia de 220Ω y luego al pin PWM 10 de Arduino.
-        - Conecta el cátodo al GND.
+        - Conecta el ánodo del LED al pin digital PWM 12 de Arduino.
+        - Conecta el cátodo conectado a una resistencia de 220Ω  y al GND de Arduino.
     - LED verde:
-        - Conecta el ánodo del LED a una resistencia de 220Ω y luego al pin PWM 11 de Arduino.
-        - Conecta el cátodo al GND.
+        - Conecta el ánodo del LED al pin digital PWM 13 de Arduino.
+        - Conecta el cátodo conectado a una resistencia de 220Ω  y al GND de Arduino.
 
 ## Arduino con sensor ultrasónico
 ### Practica:
