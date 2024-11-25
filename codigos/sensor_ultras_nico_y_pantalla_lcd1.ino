@@ -1,8 +1,7 @@
 #include <Wire.h>
-#include <Adafruit_LiquidCrystal.h>
+#include <LiquidCrystal_I2C.h>
 
-// Configuración del LCD (I2C con pines SDA y SCL)
-Adafruit_LiquidCrystal lcd(0);
+LiquidCrystal_I2C lcd(0x27,20,4); 
 
 // Pines del sensor ultrasónico
 const int trigPin = 8;
@@ -18,10 +17,11 @@ void setup() {
   pinMode(echoPin, INPUT);
 
   // Inicialización del LCD
-  lcd.begin(16, 2); // Configura LCD de 16x2
-  lcd.setBacklight(LOW); // Activa la luz de fondo
+  lcd.init();                      // initialize the lcd 
+  lcd.init();
+  lcd.backlight();
+  lcd.setCursor(1,0);
   lcd.print("Distancia:");
-
   // Inicialización del puerto serial
   Serial.begin(9600);
 }
@@ -42,7 +42,6 @@ void loop() {
 
   // Mostrar distancia en el LCD
   lcd.setCursor(0, 1); // Segunda línea
-  lcd.print("Dist: ");
   lcd.print(distance);
   lcd.print(" cm   "); // Espacios extra para limpiar la línea
 
