@@ -184,8 +184,23 @@ Este archivo configura el puerto serial del Arduino para enviar y recibir datos 
 - Resistencias de 220Ω.
 - Cables de conexión.
 
-### Conexiones:
-1. LED:
-    - Conecta el cátodo (patita corta) del LED a GND.
-    - Conecta el ánodo (patita larga) a un extremo de una resistencia de 220 Ω.
-    - Conecta el otro extremo de la resistencia al pin digital D9 del Arduino.
+
+  ## Arduino con servo motor
+### Expo
+En esta práctica se utiliza un Arduino para automatizar la apertura de la tapa de un bote de basura mediante un sensor ultrasónico y un servo motor.
+El sensor ultrasónico mide la distancia entre el bote y el objeto detectado. Cuando esta distancia está dentro de un rango, el microcontrolador envía una señal al servo motor para que mueva la tapa hacia una posición abierta. Posteriormente, el servo regresa la tapa a su posición inicial después de un breve período de tiempo.
+
+Adicionalmente, se integran indicadores visuales con LEDs para mostrar el estado del sistema:
+
+LED rojo: Indica que el sistema está inactivo o la tapa está cerrada.
+LED verde: Indica que el sistema está activo o la tapa está abierta.
+<img src="imagenes/Servo_motor.png" alt="Arduino con comunicación serial" width="750">
+
+### Componentes:
+- Arduino UNO.
+- LED.
+- Resistencias de 220Ω.
+- Cables de conexión.
+- Servo motor
+- Sensor ultrasonico
+
